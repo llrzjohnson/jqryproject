@@ -6,9 +6,39 @@
     <title>That Net Design</title>
     <!-- myProject references -->
     <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <link rel="stylesheet" href="dist/animate.css">
     <link rel="stylesheet" href="dist/morphext.css">
-    <script src="//https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://malsup.github.io/min/jquery.cycle2.min.js"></script>
+   
+    <script src="js/jquery.cycle.all.js"></script>
+    <script>
+        $(document).ready(function() {
+           $('#slideshow').cycle({
+           fx: 'scrollHorz',
+           speed: 500,
+           timeout: 2000,
+           pause: 1
+           });
+           
+           $('#slide').cycle({ 
+    fx:      'turnDown', 
+    delay:   -1000 
+});
+
+           
+           $('#fade').cycle();
+                   
+           $('#zoom').cycle({ 
+    fx:    'zoom', 
+    sync:  false, 
+    delay: -1000 
+});
+           
+        });
+    </script>
 </head>
 <body>
 
@@ -43,7 +73,18 @@
         </section>
 
         <section class="aboutme">
+            
+        <div id="slideshow" style="margin-right: auto; margin-left: auto; float: left;">
+            <img src="images/1.jpg" width="420" height="315">
+            <img src="images/2.jpg" width="420" height="315">
+            <img src="images/3.jpg" width="420" height="315">
+            <img src="images/4.jpg" width="420" height="315">
+        </div>
+
+
+           <!-- <img src="images/lester.jpg" style="margin-right: auto; margin-left: auto; float: left;">-->
             <article>
+                   
                 <p> 
                     <strong style="font-size:large; font-weight:bold">L. Lester Johnson</strong><br />
                     Web Developer/Designer <br />

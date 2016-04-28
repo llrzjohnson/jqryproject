@@ -142,7 +142,7 @@ section.main aside h3 a {
 section.main aside h3 a:hover {
 	text-decoration: underline;
 }
-
+/*
 section.main aside .content.trending{
 	background-image: url(../images/icon_star.svg);
 }
@@ -153,7 +153,7 @@ section.main aside .content.tools{
 section.main aside .content.find-it{
 	background-image: url(../images/icon_gear.svg);
 }
-
+*/
 /* Section - Atmosphere */
 
 section.atmosphere {
@@ -180,9 +180,11 @@ section.aboutme {
 }
 
 section.aboutme article {
-	padding: 0 20px 0 515px;
-	background: url(../images/lester.jpg) no-repeat 0 5px;
-	min-height: 220px;	
+	padding: 0 20px 0 500px;
+	/*padding: 0 20px 0 515px;*/
+	/*background: url(../images/lester.jpg) no-repeat 0 5px;*/
+	min-height: 220px;
+
 }
 
 /*Section Contact*/
