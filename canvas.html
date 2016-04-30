@@ -1,83 +1,67 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- original -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>That Net Design</title>
-    <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="/css/default.css" rel="stylesheet" />
-    <script src="Scripts/jquery.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="Scripts/geolocation.js" ;></script>  
-    <script src="js/default.js"></script> 
     <!-- myProject references -->
-
-     
-   
-    
-
-    <style>
-        #map {
-            width: 360px;
-            height: 360px;
-        }
-    </style>-->
-
-
-
-
+    <link href="css/formvalidate.css" rel="stylesheet" type="text/css">
+    <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="dist/animate.css">
+    <link rel="stylesheet" href="dist/morphext.css">
+    <script src="//https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/form-builder.min.css">
+    <script src="Scripts/jquery.validate.js"></script>
 </head>
 <body>
 
     <div id="page">
         <header>
-            <a class="logo" title="That Net" href="http://www.google.com" target="_blank"><span>That Net Design</span></a>
+            <a class="logo" title="That Net" href="default.html" target="_blank"><span>That Net Design</span></a>
             <div class="hero">
-                <h1>Add interest with coding and design</h1>
+                <h1>Add <span id="js-rotating">fun, art, style, life</span> with coding and design</h1>
                 <a class="btn" title="Let's start creating websites" href="#">Let's start<span> creating websites</span></a>
+                <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"><\/script>')</script>
+        <script src="dist/morphext.js"></script>
+        <script>
+         $("#js-rotating").Morphext({
+    // The [in] animation type. Refer to Animate.css for a list of available animations.
+    animation: "bounceIn",
+    // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+    separator: ",",
+    // The delay between the changing of each phrase in milliseconds.
+    speed: 2000,
+    complete: function () {
+        // Called after the entrance animation is executed.
+    }
+});
+        </script>
             </div>
         </header>
 
-        <section class="main">
-        </section>
+        <section class="main"></section>
 
         <section class="canvas">
             <article>
-                <p>
-                    <strong style="font-size:large; font-weight:bold">Google Map integration</strong><br />
-                    Latitute/Longitude Current Position - Jquery<br />
-                </p>
-                <p>
-                    <!--Map-->
-                    <div id="map"></div>
-                </p>
-                <!--longitude latitude-->
-                <div id="lat"></div>
-                <div id="long" style="padding-bottom:30px;"></div>
-
-                
-                <!--Chess board-->
-                <p>
-                    <strong style="font-size:large; font-weight:bold">Chess Board</strong><br />
-                    HTML5 Draw Canvas - Jquery<br />
-                </p>
-                <p>
-
-                    <canvas id="myCanvas" width="365" height="360">
-                        You need a browser that supports HTML5!
-                    </canvas>
-
-                </p>
-
-                <a class="btn" title="Creating a modern atmosphere" href="#">Learn More</a>
+                <textarea id="fb-template"></textarea>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/form-builder.min.js"></script>
+  <script>
+  jQuery(document).ready(function($) {
+    'use strict';
+    $(document.getElementById('fb-template')).formBuilder();
+  });
+  </script>
 
             </article>
 
         </section>
-
+<div style="padding-bottom: 1em;"> 
+</div>
         <section class="how-to">
             <aside>
+
                 <div class="content">
                     <img alt="Planning your website design" src="images/photo_planning.jpg">
                     <h4>How-To: Planning</h4>
@@ -117,6 +101,9 @@
                 </li>
                 <li>
                     <a title="Contact Us" href="contact.html">Contact Me</a>
+                </li>
+                <li>
+                    <a title="Canvas" href="#">Canvas</a>
                 </li>
             </ul>
 
